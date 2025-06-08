@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header{
+    background: #0c1e36;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+    background: url(../style/img/photo_2025-06-07_13-50-33.jpg) no-repeat center/cover;
+    color: #fff;
+    background-color: #001d3d;
+   
+}
+.btn{
+    display: inline-block;
+    padding: 15px 25px;
+    background: #ffcd05;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+section{
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    
+}
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+.gallery-section {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.6s ease;
+}
+
+.gallery-item .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.gallery-item:hover .after {
+  opacity: 1;
+}
+
+.gallery-item:hover .before {
+  opacity: 0;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Общие стили */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdfdfd;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Услуги */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+/* Почему выбирают нас */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.why-item {
+  background: #eaf6ff;
+  border-left: 4px solid #007BFF;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.why-item h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #007BFF;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
